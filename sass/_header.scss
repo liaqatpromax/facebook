@@ -1,0 +1,246 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .2rem;
+    background-color: #fff;
+    border-bottom: 1px solid #f4f2f2;
+    overflow: hidden;
+    box-shadow: 0 2rem 6rem rgba(0, 0, 0, .10);
+    position: fixed;
+  top: 0;
+  right: 0;
+//   bottom: 0;
+  width: 100%;
+  z-index: 200000;
+
+    &__start{
+        // flex: 0 0 30%;
+        display: flex;
+        align-items: center;
+        // justify-content: space-around;
+        width: 25%;
+        padding:0 0 0 1.5rem;
+        // border: 2px solid saddlebrown;
+
+       
+        
+        &--input{
+            position: relative;
+            margin-left: .2rem;
+            @media only screen and (max-width:$bp-tab) {
+                display: none;
+            }
+            
+          
+        }
+        &--search{
+            border: none;
+            outline: none;
+            border-radius:5rem ;
+            padding: 1rem 3rem 1rem 3.5rem;
+            width: 24rem;
+            background-color: #F0F2F5;
+            color: #65676B;
+            @media only screen and (max-width:$bp-huge) {
+                margin-left: .5rem;
+            }
+            @media only screen and (max-width:$bp-hug) {
+               padding:1rem 3rem 1rem 3.5rem ;
+               width: 20rem;
+            }
+            
+
+        }
+
+        &-logo{
+            position: absolute;
+            top: 1.9rem;
+            left: 1.2rem;
+            color: #65676B;
+
+            
+        }
+        &-mbllogo-2{
+            display: none;
+            @media only screen and(max-width:$bp-tab) {
+                display: none;
+            }
+
+            @media only screen and(max-width:$bp-port) {
+                display: contents;
+                font-size: 1.4rem;
+                color: #65676B;
+                margin-left: .6rem;
+                border-radius: 50%;
+                padding: 7em .9rem;
+              background-color: #D8DADF;
+              &:hover{
+                background-color: #979799;
+              }
+            }
+        }
+
+        &--mbllogo{
+            display: none;
+
+            @media only screen and(max-width:$bp-tab) {
+                display:contents;
+                font-size: 1.4rem;
+                color: #65676B;
+                margin: 0;
+                border-radius: 50%;
+                
+              background-color: #D8DADF;
+            //   margin-left: 12rem;
+
+             
+            }
+
+            
+        }
+       
+        &--mbllogo-1{
+
+            @media only screen and(max-width:$bp-tab) {
+                font-size: 1.4rem;
+            color: #65676B;
+            margin-left: .6rem;
+            border-radius: 50%;
+            padding: .7em .9rem;
+          background-color: #D8DADF;
+        //   margin-left: -2rem;
+
+          &:hover{
+            background-color: #979799;
+          }
+            }
+            
+        }
+       
+
+        &-img{
+            width: 4.5rem;
+            height: 4.5rem;
+            transform: translateY(7%);
+        }
+    }
+
+    &__center{
+        
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 45%;
+        transform: translateX(-18%);
+
+        @media only screen and (max-width:$bp-hug) {
+            transform: translateX(-14%);
+        }
+        @media only screen and (max-width:$bp-tab) {
+            transform: translateX(-8%);
+        }
+
+        &-icn{
+            position: relative;
+
+            padding: 1.2rem 3.6rem;
+            margin: 0 auto;
+            
+
+            &-active{
+                color: #1b74e4;
+            }
+
+            &:hover{
+                background-color: #D8DADF;
+                border-radius: 1rem;
+            }
+           
+        }
+
+        &-active-state{
+              
+            &::after{
+                content: "";
+                height: 3px;
+                width: 100%;
+               background-color: #1b74e4;
+                position: absolute;
+                display: block;
+                top: 4.5rem;
+                right: 0.1rem;
+                
+                
+            }
+        }
+
+        &-link-3{
+            
+                @media only screen and(max-width:$bp-port){
+                    display: none;
+            
+            }
+        }
+
+
+        &-link:link,
+        &-link:visited{
+            text-decoration: none;
+            display: block;
+            color: #65676B;
+            
+        
+          
+        }
+    }
+    &__user{
+        
+        display: flex;
+        align-items: center;
+        margin-right: 1rem;
+
+
+        &-logo{
+            padding: 1rem;
+            background-color:#D8DADF;
+            border-radius: 5rem;
+            position: relative;
+            margin-right: .4rem;
+
+            &:hover{
+                background-color: #CED0D4;
+            }
+            &-notification{
+
+                color: #fff;
+                background-color: red;
+                position: absolute;
+                right: 5.5rem;
+                font: bolder;
+                top: 1rem;
+                border-radius: 100%;
+                padding: 0 2px;
+
+
+               @media only screen and (max-width:$bp-huge) {
+                    right: 5.6rem;
+                }
+            }
+        }
+        
+        &-img{
+            border-radius: 5rem;
+            width: 4rem;
+            height: 4rem;
+            margin-left: .5rem  ;
+            
+        }
+    }
+} 
+.header__center{
+    @media only screen and (max-width:$bp-port) {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}

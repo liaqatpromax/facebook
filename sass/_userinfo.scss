@@ -1,0 +1,291 @@
+.userinfo{
+    // border: 2px solid saddlebrown;
+    flex: 0 1 25%;
+    width: 32rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 89vh;
+    position: fixed;
+    right: 0rem;
+    top: 7rem;
+    overflow-y: scroll;
+
+    @media only screen and (max-width:$bp-hug) {
+        width: 25rem;
+    }
+
+    @media only screen and (max-width:$bp-tab) {
+        width: 25rem;
+    }
+
+    @media only screen and(max-width:$bp-port) {
+        display: none;
+    }
+    
+
+    &_txt{
+        color:#707276;
+        font-weight: bold;
+        font-size:1.7rem ;
+        padding-bottom: .5rem;
+    }
+
+    &_ads{
+        display: flex;
+        flex-direction: column;
+        height: 40%;
+    
+
+    }
+
+    &_bat{
+        height: 50%;
+        align-items: center;
+        display: flex;
+        position: relative;
+        padding: 1rem;
+        cursor: pointer;
+
+        &:hover{
+            border-radius: 1rem;
+            background-color: #CED0D4;
+            // width: 80%;
+        }
+    }
+
+    &_img{
+        height: 80%;
+        border-radius: 1rem;
+        padding: 1rem;
+    }
+
+    &-txt{
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        color: black;
+
+        @media only screen and (max-width:$bp-tab) {
+            font-size: 1.2rem;
+
+        }
+    }
+    
+    &-txt2{
+        font-size: 1rem;
+        text-transform: capitalize;
+        color:#707276;
+        position: absolute;
+        left: 9.2rem;
+        top: 7rem;
+        @media only screen and (max-width:$bp-tab) {
+            top:4.5rem ;
+            left: 5.7rem;
+        }
+
+    }
+    
+    &-txt3{
+        font-size: 1rem;
+        text-transform: capitalize;
+        color:#707276;
+        position: absolute;
+        right: 8.8rem;
+        top: 7rem;
+        @media only screen and (max-width:$bp-tab) {
+            top:5.5rem ;
+            left: 8.2rem;
+        }
+    }
+
+    &_{
+
+        border-bottom:1px solid #d8dadb;
+        border-top:1px solid #d8dadb;
+        height: 22%;
+        padding: 1rem;
+
+        @media only screen and (max-width:$bp-huge) {
+            padding: .5rem;
+        }
+    }
+    &_frndreq{
+        height: 70%;
+        
+        display: flex;
+        // flex-direction: column;
+        padding: .5rem;
+        align-items: center;
+        
+
+        &-txt{
+            color:#707276;
+            font-weight: bold;
+            font-size:1.5rem ;
+            padding-bottom: .5rem;
+            @media only screen and (max-width:$bp-huge) {
+                padding-bottom: .3rem;
+                font-size: 1.2rem;
+
+            }
+        }
+
+        &-img{
+            width: 20%;
+            height: 90%;
+            // border: 2px solid yellow;
+            align-items: center;
+            // margin-right: .5rem;
+            @media only screen and (max-width:$bp-huge) {
+                height: 90%;
+            }
+        }
+
+        &_img{
+            height:115%;
+            border-radius: 50%;
+        }
+
+        &_name{
+            font-size: 1.4rem;
+            color: #000;
+            // margin-bottom: .5rem;
+            // padding-bottom:.5rem ;
+            font-weight: bold;
+            @media only screen and (max-width:$bp-huge) {
+                font-size: 1.1rem;
+                // padding-bottom: .2rem;
+                // margin-bottom: .2rem;
+            }
+        }
+       
+        &_btn{
+            @media only screen and (max-width:$bp-huge) {
+                display: flex;
+                // padding-bottom: 1rem;
+            }
+        }
+    }
+    
+    &_accept{
+        margin-right: .3rem;
+        padding: .5rem 2rem;
+        border-radius: .5rem;
+        background-color: #0062D2;
+        color: #fff;
+        border: none;
+        text-decoration: none;
+        outline: none;
+        cursor: pointer;
+        @media only screen and (max-width:$bp-huge) {
+            margin-right: .3rem;
+        padding: .3rem 1rem;
+        }
+
+        &:hover{
+            background-color: #0055b6;
+        }
+    }
+
+    
+    &_reject{
+        padding: .5rem 3rem;
+        border-radius: .5rem;
+        background-color:#cacccf;
+        color: #070707;
+        border: none;
+        text-decoration: none;
+        outline: none;
+        cursor: pointer;
+
+        @media only screen and (max-width:$bp-huge) {
+            margin-right: .3rem;
+        padding: .3rem 2rem;
+        }
+        
+        &:hover{
+            background-color:#9e9e9e;
+        }
+
+    }
+
+    &_contacts{
+        height: 38%;
+        // border: 2px solid palevioletred;
+        padding: 1rem;
+        display: flex;
+     
+     
+        flex-direction: column;
+        position: relative;
+
+        
+        &-top{
+            display: flex;
+            justify-content: space-between;
+            // border: 2px solid gold;
+        }
+
+        &-icn{
+            display: flex;
+            font-size: 1.4rem;
+            align-items: center;
+            padding: .2rem .8rem;
+
+            &:hover{
+                background-color: #CED0D4;
+                border-radius: 50%;
+            }
+        }
+
+      
+        &_name{
+            font-size: 1.2rem;
+            text-transform: capitalize;
+            font-weight: 600;
+            
+        }
+        
+        &_img{
+            height: 100%;
+            border-radius: 50%;
+            padding: 0 .3rem;
+            padding-right: .5rem;
+            position: relative;
+
+
+        }
+    }
+
+    &_contacts-name{
+        // border: 2px solid saddlebrown;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-bottom: .4rem;
+        cursor: pointer;
+        &:hover{
+            background-color:#CED0D4;
+            border-radius: .5rem;
+        }
+        &::after{
+            content: "";
+            height: 1rem;
+            width: .1rem;
+            border-radius: 50%;
+            padding: 0.2rem 0.5rem;
+            background-color: green;
+            position: absolute;
+            z-index: 200;
+            top: 2.6rem;
+            left: 2.8rem;
+            outline: 2px solid #fff;
+
+            @media only screen and(max-width:$bp-tab) {
+                top: 1.8rem;
+                left: 2rem;
+            }
+        }
+    }
+}
